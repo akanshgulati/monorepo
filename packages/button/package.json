@@ -1,0 +1,12 @@
+{
+  "name": "@ixi-ui/button",
+  "version": "0.0.0",
+  "description": "Button anywhere",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": "Akansh Gulati (akanshgulati@gmail.com)",
+  "dependencies": {
+    "@ixi-ui/icon": "^0.0.4"
+  },
+  "private": false
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ixi-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "lerna": "^3.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "lerna exec --parallel 'BABEL_ENV=production babel src --out-dir dist --source-maps --extensions .js,.jsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest --verbose",
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  }
+}

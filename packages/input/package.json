@@ -1,0 +1,11 @@
+{
+  "name": "@ixi-ui/input",
+  "version": "0.0.2",
+  "description": "Input box",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": "Akansh Gulati (akanshgulati@gmail.com)",
+  "scripts": {
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  }
+}
