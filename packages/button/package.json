@@ -1,6 +1,6 @@
 {
   "name": "@ixi-ui/button",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Button anywhere",
   "main": "src/index.js",
   "license": "MIT",
